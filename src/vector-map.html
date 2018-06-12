@@ -1,0 +1,31 @@
+@@include('header.htm', {
+	"title": "Sleek - Admin Dashboard Template"
+})
+	<aside class="main-sidebar">
+		@@include('main-sidebar.htm', {
+			"parent": "widgets",
+			"active": "vector-map"
+		})
+	</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', {
+			"active": "Vector Map"
+		})
+		<div class="content">
+			<!-- First Row  -->
+			<div class="row">
+				<div class="col-12">
+					<div class="component-block rounded bg-white bdr ">
+						<div class=" world-chart-3 px-4 pb-4">
+							<div id="demoworld" style="height:400px; width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+@@include('footer.htm')

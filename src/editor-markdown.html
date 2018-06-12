@@ -1,0 +1,31 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template" })
+
+  <aside class="main-sidebar">
+    @@include('main-sidebar.htm', {
+      "parent": "component",
+      "active": "editors"
+    })
+  </aside>
+
+  <!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+  <div class="content-wrapper">
+    @@include('breadcrumb.htm', {
+      "active": "Markdown Editor"
+    })
+    <div class="content">
+      <!-- First Row  -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="component-block p-md-5 rounded bg-white bdr">
+            <h4 class="pb-5 text-primary d-inline-block">Markdown Editor</h4>
+            <form id="markdown" class="markdownr">
+                <textarea name="content" id="markdown-editor" rows="10"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+@@include('footer.htm')

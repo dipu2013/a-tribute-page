@@ -1,0 +1,92 @@
+/*===== Component - Dropdowns =====*/
+.btn, 
+.dropdown-toggle {
+  &:focus, &:active, &.active {
+    box-shadow: none!important;
+  }
+}
+.dropdown-toggle::after {
+  border-right: 5px solid transparent;
+  border-bottom: 0px;
+  border-top: 6px solid;
+  border-left: 5px solid transparent;
+  vertical-align: middle;
+}
+.show>.btn-primary.dropdown-toggle {
+  background-color: rgba($theme-color,0.9);
+  border-color: rgba($theme-color,0.9);
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+.show>.btn-secondary.dropdown-toggle {
+  background-color: rgba($white-color,0.9);
+  color: $primary-color;
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+.show>.btn-success.dropdown-toggle {
+  background-color: rgba($success,0.9);
+  border-color: rgba($success,0.9);
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+.show>.btn-info.dropdown-toggle {
+  background-color: rgba($info,0.9);
+  border-color: rgba($info,0.9);
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+.show>.btn-warning.dropdown-toggle {
+  background-color: rgba($warning,0.9);
+  border-color: rgba($warning,0.9);
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+.show>.btn-danger.dropdown-toggle {
+  background-color: rgba($danger,0.9);
+  border-color: rgba($danger,0.9);
+  &:focus, &:active {
+    box-shadow: none;
+  }
+}
+// ====== Button outline =======
+.show>.btn-outline-primary.dropdown-toggle {
+  color: $white-color;
+  background-color: $theme-color;
+  border-color: $theme-color;
+}
+.show>.btn-outline-secondary.dropdown-toggle {
+  color: $primary-color;
+  background-color: $border-color;
+  border-color: $border-color;
+}
+.show>.btn-outline-success.dropdown-toggle {
+  color: $white-color;
+  background-color: $success;
+  border-color: $success;
+}
+.show>.btn-outline-info.dropdown-toggle {
+  color: $white-color;
+  background-color: $info;
+  border-color: $info;
+}
+.show>.btn-outline-warning.dropdown-toggle {
+  color: $white-color;
+  background-color: $warning;
+  border-color: $warning;
+}
+.show>.btn-outline-danger.dropdown-toggle {
+  color: $white-color;
+  background-color: $danger;
+  border-color: $danger;
+}
+
+// ====== Button Split =======
+.dropdown-toggle-split {
+  padding: 0 12px;
+}

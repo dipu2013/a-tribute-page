@@ -1,0 +1,35 @@
+@import 'alert';
+@import 'bredcrumb';
+@import 'buttons';
+@import 'button-group';
+@import 'button-social';
+@import 'button-loading';
+@import 'badge';
+@import 'card';
+@import 'carousel';
+@import 'calendar';
+@import 'collapse';
+@import 'dropdown';
+@import 'forms';
+@import 'editors';
+@import 'icons';
+@import 'list-group';
+@import 'navs';
+@import 'pagination';
+@import 'popover-tooltip';
+@import 'progressbar';
+@import 'spinners';
+@import 'switchers';
+@import 'tabs';
+@import 'tables';
+@import 'data-tables';
+@import 'widgets';
+
+// Component Common
+.component-block {
+  padding: 50px 30px 35px;
+  margin-bottom: 30px;
+  > h4 {
+    text-transform: capitalize;
+  }
+}

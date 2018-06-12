@@ -1,0 +1,42 @@
+/*===== Component - Tables =====*/
+thead th, 
+tbody tr td:first-child {
+  color: $primary-color;
+  font-weight: 500;
+}
+
+.table-secondary td {
+  background-color: $white-color;
+  color: $primary-color;
+}
+.table-primary {
+  background-color: rgba($theme-color, 0.6);
+  color: $primary-color;
+}
+.table-info {
+  background-color: rgba($info, 0.6);
+  color: $primary-color;
+}
+.table-success {
+  background-color: rgba($success, 0.6);
+  color: $primary-color;
+}
+.table-danger {
+  background-color: rgba($danger, 0.6);
+  color: $primary-color;
+}
+.table-warning {
+  background-color: rgba($warning, 0.6);
+  color: $primary-color;
+}
+
+.table-dark thead th, 
+.table-dark tbody tr td:first-child {
+  color: $white-color;
+}
+
+// Table borderless
+.table-borderless th,
+.table-borderless td {
+  border: 0px solid #dee2e6;
+}

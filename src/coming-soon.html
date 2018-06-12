@@ -1,0 +1,45 @@
+@@include('header.htm', {
+	"title": "Sleek - Admin Dashboard Template"
+})
+	<aside class="main-sidebar">
+		@@include('main-sidebar.htm', {
+			"parent": "pages",
+			"active": "comingsoon"
+		})
+	</aside>
+	
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', {
+			"parent": "Pages",
+			"active": "Coming Soon"
+		})
+		<div class="content">
+			<div class="comingsoon-wrapper rounded bdr bg-white">
+				<div class="row justify-content-center">
+					<div class="col-lg-9 col-md-9">
+						<div class="comingsoon text-center">
+							<a class="navbar-brand" href="index.html"><img src="assets/img/logo-mini.png" alt=""></a>
+							<h1 class="text-primary">We Are Coming Soon</h1>
+							<p>We will be here soon.Please stay in touch</p>
+						</div>
+						<div class="count-down text-center">
+							<div class="simple_timer"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-10 col-lg-6 col-xl-4 col-11 mx-auto">
+						<form class="form_subscribe text-center">
+							<input class="form-control mr-sm-2" type="text" placeholder="Enter email for information">
+							<button class="btn-search btn-search my-2 my-sm-0" type="submit"><i class="fa fa-arrow-right"></i></button>
+						</form>
+					</div>
+				</div>
+				<p class="text-center text-primary position-relative">&copy; 2018 Copyright Sleek Admin by <a href="#" class="text-primary">Abdus</a></p>
+			</div>
+		</div>
+
+@@include('footer.htm')

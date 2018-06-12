@@ -1,0 +1,24 @@
+/* ====== index ======
+1. COMMON
+2. HEADER
+3. NAVIGATION
+4. MAIN 
+
+
+===================== */
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/media-query';
+@import 'components/components';
+@import 'common';
+@import 'header';
+@import 'sidebar';
+@import 'sidebar-mini';
+@import 'main';
+@import 'email';
+@import 'map';
+@import 'profile';
+@import 'invoice';
+@import 'coming-soon';
+@import 'analytics';
+@import 'footer';

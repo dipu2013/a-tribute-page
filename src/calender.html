@@ -1,0 +1,30 @@
+@@include('header.htm', {
+	"title": "Sleek - Admin Dashboard Template"
+})
+	<aside class="main-sidebar">
+		@@include('main-sidebar.htm', {
+			"parent": "component",
+			"active": "calender"
+		})
+	</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb.htm', {
+			"active": "Calendar"
+		})
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="component-block p-md-5 rounded bg-white bdr">
+						<h4 class="pb-5 text-primary d-inline-block">Calendar</h4>
+						<button class="btn btn-pill btn-primary float-right"><i class="fa fa-plus"></i> Add Event</button>
+						<div id='calendar'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+@@include('footer.htm')

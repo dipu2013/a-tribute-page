@@ -1,0 +1,232 @@
+/*========== Analytics Page ==========*/
+// ===== Activity area =====
+.activity-contents {
+  border-bottom: 1px solid $border-color;
+  @include extra-large {
+    border-bottom: 0px;
+    border-right: 1px solid $border-color;
+  }
+}
+.activity-log,
+.acquisition-type {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include extra-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.acquisition-type li,
+.activity-log li {
+  position: relative;
+  padding-bottom: 15px;
+  margin-right: 20px;
+  @include tablet {
+    margin-right: 30px;
+  }
+  @include extra-large {
+    margin-right: 50px;
+    padding-bottom: 17px;
+  }
+  @include large-desktops {
+    margin-right: 80px;
+  }
+  a {
+    color: $text-color;
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 5px;
+    @include desktops {
+      font-size: 13px;
+    }
+    @include extra-large {
+      font-size: 15px;
+    }
+    &:hover {
+      color: $theme-color;
+    }
+  }
+  span {
+    font-size: 13px;
+    @include desktops {
+      font-size: 15px;
+    }
+  }
+  h4 {
+    font-size: 15px;
+    @include extra-large {
+      font-size: 20px;
+    }
+  }
+  &.active {
+    a {
+      color: $theme-color;
+    }
+    h4 {
+      color: $primary-color;
+    }
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.acquisition-type > li:after,
+.activity-log > li:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: $theme-color;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.acquisition-type > li.active:after,
+.activity-log > li.active:after {
+  opacity: 1;
+  visibility: visible;
+}
+.user-log {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include desktops {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  h4 {
+    padding-bottom: 17px;
+    @include desktops {
+      padding-bottom: 18px;
+    }
+    @include extra-large {
+      padding-bottom: 17px;
+    }
+  }
+}
+.single-content-block {
+  #activity, #acquisition {
+    @include large-desktops {
+      min-height: 300px;
+    }
+  }
+  #currentUser {
+    @include large-desktops {
+      min-height: 300px;
+    }
+  }
+}
+.content-block-footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include extra-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  a {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 45px;
+  }
+}
+.content-block .acquisition-contents {
+  .single-content-block {
+    @include large-desktops {
+      margin-bottom: 25px!important;
+    }
+  }
+}
+.customLegend li {
+  display: inline-block;
+  margin-right: 25px;
+  margin-top: 30px;
+  span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 25px;
+  }
+}
+
+// World Chart 2
+.world-chart-2 {
+  height: 265px;
+}
+.world-data-chart {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include extra-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &.bdr-bottom {
+    @include large-desktops {
+      border-bottom: 0;
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+
+// Session By Device
+.chart-info-card {
+  > i {
+    color: $theme-color;
+    font-size: 25px;
+    display: inline-block;
+  }
+  > span {
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+// Page view Block
+.page-view-table.table-responsive {
+  @include desktops {
+    display: table;
+  }
+  @include large-desktops {
+    // display: block;
+  }
+}
+.page-view-table thead th {
+  border-bottom: 1px solid $border-color;
+  font-size: 13px;
+  color: $text-color;
+  font-weight: 400;
+  padding-top: 30px;
+}
+.page-view-table tbody tr:first-child td {
+  padding-top: 40px;
+}
+.page-view-table tbody tr a.link {
+  color: $primary-color;
+  &:hover {
+    color: $theme-color;
+  }
+}
+
+.page-view-table tbody tr:last-child td {
+  padding-bottom: 30px;
+}
+.page-view-table tbody td:first-child {
+  width: 55%;
+}
+
+.page-view-table thead th:first-child,
+.page-view-table tbody td:first-child {
+  padding-left: 30px;
+  @include extra-large {
+    padding-left: 50px;
+  }
+}
+.page-view-table thead td:last-child,
+.page-view-table tbody td:last-child {
+  padding-right: 50px;
+}

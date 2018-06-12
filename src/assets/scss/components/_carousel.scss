@@ -1,0 +1,46 @@
+/*===== Component - Carousel =====*/
+.carousel-indicators {
+  bottom: 15px;
+  &.indicator-success li {
+    background-color: rgba($success, 0.2);
+    &.active {
+      background-color: rgba($success, 1);
+    }
+  }
+}
+.carousel-testimonial {
+  .card .card-img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin:  0 auto;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  .card .card-body > p {
+    line-height: 1.6;
+  }
+  .card .card-body > a {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: auto;
+    z-index: 55;
+    color: $text-color;
+  }
+  .carousel-control-prev {
+    left: -100px;
+    .carousel-control-prev-icon {
+      color: $text-color;
+    }
+  }
+  .carousel-control-next {
+    right: -100px;
+  }
+}
+.carousel-caption {
+  bottom: 40px;
+}

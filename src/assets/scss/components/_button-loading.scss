@@ -1,0 +1,18 @@
+// @mixin button-size($height, $padding-horizontal, $font-size, $line-height, $border-radius) {
+//   height: $height;
+//   padding: 0 $padding-horizontal;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   border-radius: $border-radius;
+// }
+.btn.btn-ladda {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  @include button-size(auto,20px, 15px, auto, 0px);
+}

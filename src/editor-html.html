@@ -1,0 +1,28 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template" })
+  <aside class="main-sidebar">
+    @@include('main-sidebar.htm', {
+      "parent": "component",
+      "active": "editors"
+    })
+  </aside>
+  
+  <!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+  <div class="content-wrapper">
+    @@include('breadcrumb.htm', {
+      "active": "Code Editor"
+    })
+    <div class="content">
+      <!-- First Row  -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="component-block p-md-5 rounded bg-white bdr">
+            <h4 class="pb-5 text-primary d-inline-block">HTML Editor</h4>
+            <div id="code-editor"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+@@include('footer.htm')

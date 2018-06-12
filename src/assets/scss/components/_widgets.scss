@@ -1,0 +1,68 @@
+/*===== Component - Widgets =====*/
+.widget-block {
+  position: relative;
+  padding: 30px;
+  margin-bottom: 30px;
+  &.bg-primary {
+    border-color: $theme-color;
+    p {
+      color: rgba($white-color, 0.7);
+    }
+    .progress {
+      background: rgba($white-color, 0.5);
+    }
+  }
+  &.bg-warning {
+    border-color: $warning;
+    p {
+      color: rgba($white-color, 0.7);
+    }
+    .progress {
+      background: rgba($white-color, 0.5);
+    }
+  }
+  &.bg-danger {
+    border-color: $danger;
+    p {
+      color: rgba($white-color, 0.7);
+    }
+    .progress {
+      background: rgba($white-color, 0.5);
+    }
+  }
+  &.bg-success {
+    border-color: $success;
+    p {
+      color: rgba($white-color, 0.7);
+    }
+    .progress {
+      background: rgba($white-color, 0.5);
+    }
+  }
+  
+  i {
+    font-size: 22px;
+  }
+}
+.widget-chart {
+  height: 70px;
+  #barChart {
+    width: 100%;
+    height: 100%;
+  }
+}
+.widget-media {
+  position: relative;
+  padding: 30px;
+  margin-bottom: 30px;
+  i {
+    font-size: 22px;
+  }
+}
+.widget-profile {
+  .card-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+}

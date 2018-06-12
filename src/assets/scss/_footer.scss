@@ -1,0 +1,18 @@
+/* ======================================
+-->  FOOTER
+========================================= */
+.main-footer {
+  background: $white-color;
+  padding: 15px;
+  color: #444444;
+  border-top: 1px solid $border-color;
+}
+
+.copyright {
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  p {
+    font-weight: 500;
+  }
+}

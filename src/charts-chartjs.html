@@ -1,0 +1,98 @@
+@@include('header.htm', {
+	"title": "Sleek - Admin Dashboard Template"
+})
+	<aside class="main-sidebar">
+		@@include('main-sidebar.htm', {
+	    "parent": "charts",
+			"active": "component"
+		})
+	</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', {
+			"parent": "Charts",
+			"active": "ChartJS"
+		})
+		<div class="content">
+			<!-- First Row  -->
+			<div class="row">
+				<div class="col-12">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Simple Line Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="linechart" class="chartjs"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Dual Line Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="dual-line"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Area Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="area-chart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Bar Chart</h4>
+						<div class="single-content-block pb-5" style="height: 300px;">
+	            <canvas id="bar3"></canvas>
+	            <div id='customLegend' class='customLegend'></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Product Line Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="activity"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="component-block rounded bg-white bdr ">
+						<h4 class="pb-5 text-primary ">Multiple Statistic</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="mstat"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="component-block rounded bg-white bdr">
+						<h4 class="pb-5 text-primary ">Donut Chart</h4>
+						<div class="single-content-block mb-1" style="height: 300px;">
+							<canvas id="deviceChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="component-block rounded bg-white bdr">
+						<h4 class="pb-5 text-primary ">Polar Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="polar"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="component-block rounded bg-white bdr">
+						<h4 class="pb-5 text-primary ">Radar Chart</h4>
+						<div class="single-content-block" style="height: 300px;">
+							<canvas id="radar"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+@@include('footer.htm')
